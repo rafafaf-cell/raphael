@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebenézer Mercearia · Gás e Água</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="Eben%C3%A9zer%20Mercearia%20%C2%B7%20G%C3%A1s%20e%20%C3%81gua_files/css2.css" rel="stylesheet">
+  <!-- Font Awesome Icons (Free) -->
+  <link rel="stylesheet" href="Eben%C3%A9zer%20Mercearia%20%C2%B7%20G%C3%A1s%20e%20%C3%81gua_files/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {<img src="ebenezer.jpeg" alt="Minha Foto">
+      background-color: #f9f7f4;
+      color: #2e2a28;
+      line-height: 1.5;
+    }
+
+    /* container utility */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* header */
+    .top-bar {
+      background-color: #1f4a3c;      /* verde escuro - remete ao freshness */
+      color: white;
+      padding: 8px 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-bar i {
+      margin-right: 6px;
+      color: #f5c542;
+    }
+
+    .header-main {
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 20, 10, 0.05);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-main .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-icon {
+      background-color: #1f4a3c;
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+
+    .logo-text h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1f4a3c;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #b45f2b;            /* tom terracota / gás? */
+      background: #fef0e5;
+      padding: 2px 12px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2e2a28;
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #1f4a3c;
+    }
+
+    .btn-contato {
+      background-color: #1f4a3c;
+      color: white !important;
+      padding: 10px 22px;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-contato:hover {
+      background-color: #b45f2b;
+      color: white;
+    }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(105deg, #f3f0ea 0%, #fefcf9 100%);
+      padding: 40px 0 56px;
+    }
+
+    .hero .container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1 1 350px;
+    }
+
+    .hero-text .tagline {
+      background: #b45f2b15;
+      color: #b45f2b;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 6px 16px;
+      border-radius: 40px;
+      display: inline-block;
+      margin-bottom: 20px;
+      border: 1px solid #b45f2b30;
+    }
+
+    .hero-text h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #1f4a3c;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #4a4643;
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      transition: 0.2s;
+      box-shadow: 0 8px 14px -6px #25D36670;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #20b859;
+      transform: scale(1.02);
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: #1f4a3c;
+      border: 2px solid #1f4a3c;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary:hover {
+      background-color: #1f4a3c;
+      color: white;
+    }
+
+    .hero-image {
+      flex: 1 1 350px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-card {
+      background: white;
+      border-radius: 40px 40px 40px 40px;
+      padding: 20px 20px 20px 20px;
+      box-shadow: 0 30px 40px -20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .produto-card {
+      background: #f5f5f5;
+      border-radius: 30px;
+      padding: 24px 16px;
+      text-align: center;
+      min-width: 130px;
+    }
+
+    .produto-card i {
+      font-size: 3.5rem;
+      color: #1f4a3c;
+      margin-bottom: 10px;
+    }
+
+    .produto-card h4 {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .produto-card p {
+      font-size: 0.9rem;
+      color: #b45f2b;
+      font-weight: 600;
+    }
+
+    /* seção destaques */
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1f4a3c;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      color: #5f5b58;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-bottom: 48px;
+    }
+
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 32px;
+    }
+
+    .produto-item {
+      background: white;
+      border-radius: 32px;
+      padding: 32px 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 30, 10, 0.05);
+      transition: 0.2s ease;
+      border: 1px solid #e0dbd3;
+    }
+
+    .produto-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 30px -12px rgba(31, 74, 60, 0.2);
+    }
+
+    .produto-icon {
+      background-color: #f4f1ec;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      color: #1f4a3c;
+      font-size: 2.8rem;
+    }
+
+    .produto-item h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .produto-desc {
+      color: #6b625c;
+      margin: 16px 0 12px;
+      font-size: 0.95rem;
+    }
+
+    .preco-badge {
+      background: #fdefe3;
+      color: #b45f2b;
+      font-weight: 700;
+      padding: 6px 18px;
+      border-radius: 50px;
+      display: inline-block;
+      margin: 12px 0;
+      font-size: 1.1rem;
+    }
+
+    .btn-pedido {
+      background: transparent;
+      border: 2px solid #1f4a3c;
+      color: #1f4a3c;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn-pedido:hover {
+      background: #1f4a3c;
+      color: white;
+    }
+
+    /* sobre */
+    .sobre {
+      background-color: #ffffff;
+    }
+
+    .sobre-flex {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .sobre-texto {
+      flex: 2 1 300px;
+    }
+
+    .sobre-texto h3 {
+      font-size: 2rem;
+      color: #1f4a3c;
+      margin-bottom: 20px;
+    }
+
+    .sobre-texto p {
+      font-size: 1.1rem;
+      color: #413d39;
+      margin-bottom: 20px;
+    }
+
+    .sobre-highlight {
+      background-color: #faf6f1;
+      padding: 20px 25px;
+      border-radius: 30px;
+      border-left: 8px solid #b45f2b;
+    }
+
+    .sobre-highlight i {
+      color: #b45f2b;
+      margin-right: 12px;
+    }
+
+    .sobre-imagem {
+      flex: 1 1 250px;
+      background: #d9d0c5;
+      border-radius: 40px;
+      padding: 30px 20px;
+      text-align: center;
+      color: #2e2a28;
+      font-size: 8rem;
+      line-height: 1;
+    }
+
+    /* localização */
+    .local-card {
+      background: #1f4a3c;
+      color: white;
+      border-radius: 50px;
+      padding: 48px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .local-info i {
+      color: #f5c542;
+      width: 40px;
+    }
+
+    .local-info p {
+      margin: 12px 0;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .local-btn {
+      background: #b45f2b;
+      color: white;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .local-btn i {
+      font-size: 1.4rem;
+    }
+
+    /* footer */
+    .footer {
+      background-color: #1e2b27;
+      color: #dddad5;
+      padding: 48px 0 24px;
+      margin-top: 20px;
+    }
+
+    .footer-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col p {
+      margin: 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-col a {
+      color: #f0c48b;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 24px;
+      font-size: 1.6rem;
+    }
+
+    .social-icons a {
+      color: #dddad5;
+    }
+
+    .social-icons a:hover {
+      color: #b45f2b;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid #3b4b46;
+    }
+
+    /* responsivo */
+    @media (max-width: 700px) {
+      .header-main .container {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+      .hero-text h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top mercearia com contato rápido -->
+  <div class="top-bar">
+    <div class="container">
+      <div><i class="fas fa-truck"></i> Entregas rápidas no bairro</div>
+      <div><i class="fas fa-clock"></i> Seg–Sáb 7h–20h | Dom 8h–13h</div>
+    </div>
+  </div>
+
+  <!-- Header principal -->
+  <header class="header-main">
+    <div class="container">
+      <div class="logo-area">
+        <div class="logo-icon"><i class="fas fa-droplet"></i></div>
+        <div class="logo-text">
+          <h1>EBENÉZER</h1>
+          <span>Mercearia · Gás · Água</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#local">Localização</a>
+        <a href="#contato" class="btn-contato"><i class="fab fa-whatsapp"></i> Peça já</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section com os principais produtos -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <span class="tagline"><i class="fas fa-fire"></i> Gás de cozinha + Água mineral</span>
+        <h2>Aqui tem tudo que a sua casa precisa</h2>
+        <p>Gás, água, mantimentos e aqueles brinquedos da criançada. A Ebenézer entrega no conforto do seu lar.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5514997202971?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Pedir via WhatsApp</a>
+          <a href="#produtos" class="btn-secondary"><i class="fas fa-arrow-down"></i> Ver produtos</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-card">
+          <div class="produto-card">
+            <i class="fas fa-gas-pump"></i>
+            <h4>Gás 13kg</h4>
+            <p>troca rápida</p>
+          </div>
+          <div class="produto-card">
+            <i class="fas fa-water"></i>
+            <h4>Água 20L</h4>
+            <p>mineral natural</p>
+          </div>
+          <div class="produto-card">
+            <i class="fas fa-wine-bottle"></i>
+            
+            
+          <h4>Bebidas</h4><p>refrigerante</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção produtos destacados -->
+  <section id="produtos" class="section">
+    <div class="container">
+      <h2 class="section-title">Nossos principais produtos</h2>
+      <div class="section-sub">Pedido mínimo de R$ 15,00 - Entregamos sem taxa (consulte bairro)</div>
+      <div class="produtos-grid">
+        <!-- item 1 -->
+        <div class="produto-item">
+          <div class="produto-icon"><i class="fas fa-fire"></i></div>
+          <h3>Gás 13kg</h3>
+          <div class="produto-desc">GLP ultragaz. Troca simples, vasilhame novo.</div>
+          <div class="preco-badge">R$ 100,00 (retirada) </div><br>
+          <a href="#" class="btn-pedido"><i class="fab fa-whatsapp"></i> Comprar</a>
+        </div>
+        <!-- item 2 -->
+        <div class="produto-item">
+          <div class="produto-icon"><i class="fas fa-droplet"></i></div>
+          <h3>Água 20L</h3>
+          <div class="produto-desc">Água mineral, galão retornável ou primeiro galão.</div>
+          <div class="preco-badge">R$ 7,99 (retirada) </div><br>
+          <a href="#" class="btn-pedido"><i class="fab fa-whatsapp"></i> Comprar</a>
+        </div>
+        <!-- item 3 -->
+        <div class="produto-item">
+          <div class="produto-icon"><i class="fas fa-wine-bottle"></i></div>
+          <h3>Bebidas em geral</h3>
+          <div class="produto-desc">Refrigerantes, sucos e água de coco.</div>
+          <div class="preco-badge">a partir R$ 4,90</div><br>
+          <a href="#" class="btn-pedido"><i class="fab fa-whatsapp"></i> Pedir</a>
+        </div>
+        <!-- item 4 -->
+        <div class="produto-item">
+          <div class="produto-icon"><i class="fas fa-basket-shopping"></i></div>
+          <h3>Mercearia</h3>
+          <div class="produto-desc">Arroz, feijão, óleo, leite, biscoitos, temperos e muito mais.</div>
+          <div class="preco-badge">preço de mercado</div><br>
+          <a href="#" class="btn-pedido"><i class="fab fa-whatsapp"></i> Consultar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre nós / Diferenciais -->
+  <section id="sobre" class="section sobre">
+    <div class="container">
+      <div class="sobre-flex">
+        <div class="sobre-texto">
+          <h3><i class="fas fa-hand-holding-heart" style="color:#b45f2b;"></i> Mais que uma mercearia, um amigo de vizinhança</h3>
+          <p>A Ebenézer nasceu do desejo de oferecer produtos de 
+qualidade com atendimento acolhedor. Estamos no bairro há mais de 12 
+anos, sempre com estoque completo de gás, água e itens de mercearia.</p>
+          <div class="sobre-highlight">
+            <p><i class="fas fa-check-circle"></i> <strong>Entrega própria:</strong> motoboy exclusivo, seu pedido chega rápido e inteiro.</p>
+            <p><i class="fas fa-check-circle"></i> <strong>Troca de gás na hora:</strong> levamos o botijão cheio e recolhemos o vazio.</p>
+            <p><i class="fas fa-check-circle"></i> <strong>Água gelada?</strong> Temos câmara fria, pode pedir.</p>
+          </div>
+        </div>
+        <div class="sobre-imagem">
+          <i class="fas fa-smile"></i>
+          <p style="font-size: 1.5rem; margin-top: 20px;">Seu Zé &amp; Família</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização e contato direto -->
+  <section id="local" class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="local-card">
+        <div class="local-info">
+          <h3 style="font-size: 2rem; margin-bottom: 8px;"><i class="fas fa-map-pin"></i> Onde estamos</h3>
+          <p><i class="fas fa-location-dot"></i> Rua Adelino Eça Bicho, 317</p>
+          <p><i class="fas fa-phone-alt"></i> (14) 99720-2971</p>
+          <p><i class="fas fa-envelope"></i> manoel.ebenezer@hotmail.com</p>
+        </div>
+        <a href="https://maps.app.goo.gl/example" target="_blank" class="local-btn"><i class="fas fa-map"></i> Abrir no mapa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato/rodapé -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h4 style="color:white; margin-bottom: 20px;">Ebenézer</h4>
+          <p><i class="fas fa-location-dot"></i> Rua das Mercearias, 157 - São Paulo/SP</p>
+          <p><i class="fas fa-clock"></i> 7h às 20h (seg-sex) · 8h-13h domingo</p>
+          <p><i class="fas fa-credit-card"></i> Aceitamos: dinheiro, PIX, débito e crédito</p>
+        </div>
+        <div class="footer-col">
+          <h4 style="color:white; margin-bottom: 20px;">Atendimento</h4>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5514997202971">(14) 9 9720-2971</a></p>
+          <p><i class="fas fa-phone"></i> (11) 3333-4444</p>
+          <p><i class="fab fa-instagram"></i> <a href="#"></a></p>
+        </div>
+        <div class="footer-col">
+          <h4 style="color:white; margin-bottom: 20px;">Links rápidos</h4>
+          <p><a href="#produtos">➔ Gás 13kg</a></p>
+          <p><a href="#produtos">➔ Água 20L</a></p>
+          <p><a href="#">➔ Faça seu pedido</a></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Ebenézer Mercearia Gás e Água - Orgulho de ser do bairro <i class="fas fa-heart" style="color:#b45f2b;"></i></p>
+        <div class="social-icons" style="justify-content: center; margin-top: 16px;">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- pequeno botão flutuante de whats (opcional) -->
+  <div style="position: fixed; bottom: 25px; right: 25px; z-index: 99;">
+    <a href="https://wa.me/5514997202971?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido" target="_blank" style="background-color: #25D366; color: white; padding: 18px 22px; border-radius: 60px; box-shadow: 0 8px 18px rgba(0,0,0,0.2); display: flex; gap: 10px; text-decoration: none; font-weight: 600; align-items: center;">
+      <i class="fab fa-whatsapp" style="font-size: 1.8rem;"></i> <span>Peça aqui</span>
+    </a>
+  </div>
+
+</body></html>
